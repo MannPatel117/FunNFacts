@@ -1,0 +1,24 @@
+<ion-content>
+  <div class="mesh flex">
+    <div class="hero-img"></div>
+    <div class="text-wrap flex">
+        <h1>Login</h1>
+        <form [formGroup]="credentials" (ngSubmit)="login()">
+          <ion-item class="ion-margin-bottom">
+            <ion-input color="tertiary" type="email" placeholder="Email" formControlName="email"></ion-input>
+            <ion-note slot="error" *ngIf="(email.dirty || email.touched) && email.errors">Invalid Email</ion-note>
+          </ion-item>
+          <ion-item class="ion-margin-bottom">
+            <ion-input color="tertiary" type="password" placeholder="Password" formControlName="password"></ion-input>
+            <ion-note slot="error" *ngIf="(password.dirty || password.touched) && password.errors">Minimum 8 characters required</ion-note>
+          </ion-item>
+  
+          <!-- <ion-button class="ion-margin-bottom" expand="block" shape="round" type="submit" [disabled]="!credentials.valid">Login</ion-button> -->
+          
+          <ion-button class="ion-margin-bottom" expand="block" shape="round" type="submit" [disabled]="!credentials.valid" >Welcome Back -></ion-button>
+          <a (click)="goToRegister()"><p>New to Fun N Facts?</p></a>
+        </form>
+    </div>
+  </div>
+  </ion-content>
+  

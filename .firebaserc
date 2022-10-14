@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "funnfacts": {
+      "hosting": {
+        "app": [
+          "funnfacts"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "funnfacts"
+  }
+}

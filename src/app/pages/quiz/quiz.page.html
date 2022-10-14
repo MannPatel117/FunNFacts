@@ -1,0 +1,177 @@
+<ion-content>
+
+  <ion-icon (click)="routeToHome()"  name="home-sharp"></ion-icon>
+  
+  <img src="../../../assets/icon/bulb.png" alt="">
+  <h1>Quiz Time</h1>
+  <div class="wrap-items">
+    <ion-item>
+      <ion-label>
+        <h4>Q1</h4>
+      </ion-label>
+      <h2>How many states does India have?</h2>
+    </ion-item>
+  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>How many states does India have?</ion-card-title>
+      <ion-card-subtitle>Q1</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-list>
+        <ion-radio-group value="{{q1Ans}}" #selectedQ1 (ionChange)="q1Ans= selectedQ1.value">
+          <ion-item>
+            <ion-label>26</ion-label>
+            <ion-radio slot="end" value="26"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>27</ion-label>
+            <ion-radio slot="end" value="27"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>28</ion-label>
+            <ion-radio slot="end" value="28"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>29</ion-label>
+            <ion-radio slot="end" value="29"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Which is the largest state in India?</ion-card-title>
+      <ion-card-subtitle>Q2</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-list>
+        <ion-radio-group value="{{q2Ans}}" #selectedQ2 (ionChange)="q2Ans= selectedQ2.value">
+          <ion-item>
+            <ion-label>Rajastan</ion-label>
+            <ion-radio slot="end" value="Rajastan"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Maharashtra</ion-label>
+            <ion-radio slot="end" value="Maharashtra"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Gujarat</ion-label>
+            <ion-radio slot="end" value="Gujarat"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Uttar Pradesh</ion-label>
+            <ion-radio slot="end" value="Uttar Pradesh"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>In which City is Char Minar located?</ion-card-title>
+      <ion-card-subtitle>Q3</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-list>
+        <ion-radio-group value="{{q3Ans}}" #selectedQ3 (ionChange)="q3Ans= selectedQ3.value">
+          <ion-item>
+            <ion-label>Mumbai</ion-label>
+            <ion-radio slot="end" value="Mumbai"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Hyderabad</ion-label>
+            <ion-radio slot="end" value="Hyderabad"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Delhi</ion-label>
+            <ion-radio slot="end" value="Delhi"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Chennai</ion-label>
+            <ion-radio slot="end" value="Chennai"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Which city is called the Pink City in India?</ion-card-title>
+      <ion-card-subtitle>Q4</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-list>
+        <ion-radio-group value="{{q4Ans}}" #selectedQ4 (ionChange)="q4Ans= selectedQ4.value">
+          <ion-item>
+            <ion-label>Udaipur</ion-label>
+            <ion-radio slot="end" value="Udaipur"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Jaipur</ion-label>
+            <ion-radio slot="end" value="Jaipur"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Jaisalmer</ion-label>
+            <ion-radio slot="end" value="Jaisalmer"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Jodhpur</ion-label>
+            <ion-radio slot="end" value="Jodhpur"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Which city is called the Financial Capital of India?</ion-card-title>
+      <ion-card-subtitle>Q5</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-list>
+        <ion-radio-group value="{{q5Ans}}" #selectedQ5 (ionChange)="q5Ans= selectedQ5.value">
+          <ion-item>
+            <ion-label>Delhi</ion-label>
+            <ion-radio slot="end" value="Delhi"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Bengaluru</ion-label>
+            <ion-radio slot="end" value="Bengaluru"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Chennai</ion-label>
+            <ion-radio slot="end" value="Chennai"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Mumbai</ion-label>
+            <ion-radio slot="end" value="Mumbai"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-button expand="block" (click)="submit()">Submit -></ion-button>
+  
+</ion-content>

@@ -1,0 +1,45 @@
+
+ion-content{
+    --background: linear-gradient(108.98deg, #7FC0FB 27.06%, #4088F4 90.91%) !important;
+    
+}
+
+.mesh{
+    background-image: url(../../../assets/icon/mesh-bg.png);
+}
+
+.hero-img{
+    height: 50%;
+    background-image: url(../../../assets/icon/file.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.text-wrap{
+    height: 45%;
+}
+
+.text-wrap h1{
+    font-weight: 700;
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+ion-button{
+    --background: linear-gradient(108.98deg, #64b4ff 27.06%, #4088F4 90.91%);
+    width: 80%;
+    margin-top: 20px;
+    --background-hover: linear-gradient(108.98deg,#4088F4  7.06%, #7FC0FB 90.91%);
+    --background-focused: linear-gradient(108.98deg,#4088F4  7.06%, #7FC0FB 90.91%);
+    --background-activated: linear-gradient(108.98deg,#4088F4  7.06%, #7FC0FB 90.91%);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

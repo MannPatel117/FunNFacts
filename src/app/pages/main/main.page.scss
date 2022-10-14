@@ -1,0 +1,31 @@
+
+ion-content{
+    --background: linear-gradient(108.98deg, #917FFB 27.06%, #3F2DAF 90.91%) !important;
+}
+
+.mesh{
+    background-image: url(../../../assets/icon/mesh-bg.png);
+}
+
+.hero-img{
+    background-image: url(../../../assets/icon/trophy.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.text-wrap h1{
+    font-weight: 700;
+    text-align: center;
+    font-size: 45px;
+    margin: 0;
+}
+
+ion-button{
+    --background: linear-gradient(108.98deg, #917FFB 27.06%, #3F2DAF 90.91%);
+    width: 80%;
+    margin-top: 30px;
+    --background-hover: linear-gradient(108.98deg,#3F2DAF  7.06%, #917FFB 90.91%);
+    --background-focused: linear-gradient(108.98deg,#3F2DAF  7.06%, #917FFB 90.91%);
+    --background-activated: linear-gradient(108.98deg,#3F2DAF  7.06%, #917FFB 90.91%);
+}

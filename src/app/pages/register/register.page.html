@@ -1,0 +1,28 @@
+<ion-content>
+  <div class="mesh flex">
+    <div class="hero-img"></div>
+    <div class="text-wrap flex">
+        <h1>Register</h1>
+        <form [formGroup]="credentials" (ngSubmit)="register()">
+          <ion-item class="ion-margin-bottom">
+            <ion-input color="tertiary" required="true" type="text" placeholder="Name" formControlName="name"></ion-input>
+            <ion-note slot="error" *ngIf="(name.dirty || name.touched) && name.errors">Enter Name</ion-note>
+          </ion-item>
+          <ion-item class="ion-margin-bottom">
+            <ion-input color="tertiary" type="email" placeholder="Email" formControlName="email"></ion-input>
+            <ion-note slot="error" *ngIf="(email.dirty || email.touched) && email.errors">Invalid Email</ion-note>
+          </ion-item>
+          <ion-item class="ion-margin-bottom">
+            <ion-input color="tertiary" type="password" placeholder="Password" formControlName="password"></ion-input>
+            <ion-note slot="error" *ngIf="(password.dirty || password.touched) && password.errors">Minimum 8 characters required</ion-note>
+          </ion-item>
+  
+          <!-- <ion-button class="ion-margin-bottom" expand="block" shape="round" type="submit" [disabled]="!credentials.valid">Login</ion-button> -->
+          
+          <ion-button class="ion-margin-bottom" expand="block" shape="round" type="submit" [disabled]="!credentials.valid" >Create Account -></ion-button>
+          <a (click)="goToLogin()"><p>Already a member?</p></a>
+        </form>
+    </div>
+  </div>
+  </ion-content>
+  

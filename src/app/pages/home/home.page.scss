@@ -1,0 +1,74 @@
+
+ion-content{
+    --background: #FFF7E3;   
+    
+}
+
+.mesh{
+    padding-top: 20px;
+    padding-inline: 20px;
+    background-image: url(../../../assets/icon/mesh-bg.png);
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.text h1{
+    font-size: 24px;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.text h3{
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.head img{
+    border-radius: 100%;
+}
+
+.left-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.imgimg{
+    height: 250px;
+}
+
+h1{
+    margin: 0;
+}
+.bottom-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    height: 150px;
+    width: 100%;
+    background-color: #CEF0FF;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.text-btm{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+ion-popover{
+    --background: transparent;
+}
+
+ion-button{
+    --background: #FAA6A5;
+}

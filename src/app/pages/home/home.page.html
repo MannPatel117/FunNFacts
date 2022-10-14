@@ -1,0 +1,35 @@
+<ion-content>
+  <div class="mesh flex">
+    <div class="head">
+      <div class="text">
+        <h3>Hi {{this.username}}</h3>
+        <h1>Have Fun Learning</h1>
+      </div>
+      <img (click)="presentPopover($event)" height="60px" width="60px" src="../../../assets/icon/0.png" alt="">
+      <ion-popover  #popover [isOpen]="isOpen" (didDismiss)="isOpen = false" size="auto">
+        <ng-template>
+          <ion-button class="ion-margin-bottom" expand="block"  type="button" (click)="logout()">LogOut
+            <ion-icon class="logout" name="log-out-outline"></ion-icon>
+          </ion-button>
+        </ng-template>
+      </ion-popover>
+    </div>
+    <img src="../../../assets/icon/rocket.png" alt="">
+    <h1>Categories</h1>
+    <div class="left-right">
+      <img class="imgimg" (click)="routeToLearn()" src="../../../assets/icon/learn.png" alt="">
+      <img class="imgimg" (click)="routeToQuiz()" src="../../../assets/icon/quiz.png" alt="">
+    </div>
+    <div class="bottom-bottom">
+      <div class="text-btm">
+        <h3>Today's Score</h3>
+        <h3>{{this.quizTotal}} of 5</h3>
+      </div>
+      <div class="text-btm">
+        <h3>Learning Done</h3>
+        <h3>{{this.learning}} of 5</h3>
+      </div>
+    </div>
+  </div>
+
+</ion-content>
