@@ -1,0 +1,7 @@
+{
+  "name": "FunNFacts",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
